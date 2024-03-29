@@ -15,7 +15,7 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
-import { Int } from './int64.mjs';
+import { Int } from './int64.js';
 import {
     read16,
     read32,
@@ -23,8 +23,8 @@ import {
     write16,
     write32,
     write64,
-} from './rw.mjs';
-import * as o from './offset.mjs';
+} from './rw.js';
+import * as o from './offset.js';
 
 export let mem = null;
 
@@ -120,7 +120,7 @@ class MemoryBase {
     // view when it isDetached(). isDetached() == true when m_mode >=
     // WastefulTypedArray and m_vector == 0.
     //
-    // Functions like write32() will index mem.worker via write() from rw.mjs.
+    // Functions like write32() will index mem.worker via write() from rw.js.
     //
     // size is the number of bits to read/write.
     //

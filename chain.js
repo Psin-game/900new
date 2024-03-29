@@ -15,16 +15,16 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
-import { Int } from './int64.mjs';
-import { get_view_vector } from './memtools.mjs';
-import { Addr, mem } from './mem.mjs';
+import { Int } from './int64.js';
+import { get_view_vector } from './memtools.js';
+import { Addr, mem } from './mem.js';
 
 import {
     read64,
     write64,
-} from './rw.mjs';
+} from './rw.js';
 
-import * as o from './offset.mjs';
+import * as o from './offset.js';
 
 // put the sycall names that you want to use here
 export const syscall_map = new Map(Object.entries({
